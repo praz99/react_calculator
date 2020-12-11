@@ -6,7 +6,7 @@ const App = () => (
     <header className="App-header">
       <h1>Calculator React</h1>
       <>
-        <Display result={10} />
+        <Display />
         <ButtonPanel />
       </>
     </header>
