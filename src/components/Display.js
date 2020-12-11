@@ -1,11 +1,11 @@
-function App() {
+function Display() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Calculator React</h1>
+        <h1>Calculator React Display</h1>
       </header>
     </div>
   );
 }
 
-export default App;
+export default Display;
