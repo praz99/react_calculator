@@ -1,11 +1,16 @@
-function Display() {
+import PropTypes from 'prop-types';
+
+export default function Display(props) {
+  const { result } = props;
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Calculator React Display</h1>
-      </header>
-    </div>
+    <p>{ result }</p>
   );
 }
 
-export default Display;
+Display.propTypes = {
+  result: PropTypes.string,
+};
+
+Display.defaultProps = {
+  result: 0,
+};

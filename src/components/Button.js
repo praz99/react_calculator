@@ -1,11 +1,14 @@
-function Button() {
+import PropTypes from 'prop-types';
+
+const Button = props => {
+  const { button } = props;
   return (
-    <div className="Button">
-      <header className="App-header">
-        <h1>Calculator React Button</h1>
-      </header>
-    </div>
+    <button type="button">{ button }</button>
   );
-}
+};
+
+Button.propTypes = {
+  button: PropTypes.string.isRequired,
+};
 
 export default Button;
