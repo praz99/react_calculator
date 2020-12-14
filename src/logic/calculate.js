@@ -10,13 +10,6 @@ const calculate = (calcObj, btnName) => {
     return next * -1;
   }
 
-  if (btnName === '%') {
-    if (total) {
-      return operate(total, 100, '/');
-    }
-    return operate(next, 100, '/');
-  }
-
   return operate(total, next, operation);
 };
 

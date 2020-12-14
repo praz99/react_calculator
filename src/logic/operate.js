@@ -1,8 +1,8 @@
 import Big from 'big.js';
 
 const operate = (numOne, numTwo, operation) => {
-  const first = Big(numOne);
-  const second = Big(numTwo);
+  const first = new Big(numOne);
+  const second = new Big(numTwo);
 
   let answer;
 
@@ -12,15 +12,19 @@ const operate = (numOne, numTwo, operation) => {
       break;
 
     case '-':
-      answer = first - second;
+      answer = first.minus(second);
       break;
 
     case 'x':
-      answer = first * second;
+      answer = first.times(second);
       break;
 
     case '/':
-      answer = first / second;
+      answer = first.div(second);
+      break;
+
+    case '%':
+      answer = first.mod(second);
       break;
 
     default:
