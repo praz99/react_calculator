@@ -1,5 +1,8 @@
 import Display from './Display';
+/* eslint-disable no-unused-vars */
+
 import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/calculate';
 
 const App = () => (
   <div className="App">
