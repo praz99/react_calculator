@@ -1,19 +1,37 @@
+import React from 'react';
 import Display from './Display';
-/* eslint-disable no-unused-vars */
-
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <h1>Calculator React</h1>
-      <>
-        <Display />
-        <ButtonPanel />
-      </>
-    </header>
-  </div>
-);
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+
+    // this.handleClick = this.handleClick.bind(this);
+  }
+
+  
+
+  render() {
+    const { total } = this.state;
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Calculator React</h1>
+          <>
+            <Display result={total} />
+            <ButtonPanel />
+          </>
+        </header>
+      </div>
+    );
+  }
+}
 
 export default App;
