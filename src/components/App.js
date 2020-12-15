@@ -27,14 +27,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <h1>Calculator React</h1>
           <>
-            <Display result={total} />
-            <ButtonPanel />
+            <Display result={total} next={next} />
+            <ButtonPanel clickHandler={this.handleClick} />
           </>
         </header>
       </div>

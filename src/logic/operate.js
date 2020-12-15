@@ -19,7 +19,7 @@ const operate = (numOne, numTwo, operation) => {
       answer = first.times(second);
       break;
 
-    case '/':
+    case '÷':
       answer = first.div(second);
       break;
 
