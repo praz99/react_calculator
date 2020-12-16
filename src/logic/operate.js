@@ -1,35 +1,33 @@
 import Big from 'big.js';
 
 const operate = (numOne, numTwo, operation) => {
-  const first = new Big(numOne);
-  const second = new Big(numTwo);
-
   let answer;
 
-  switch (operation) {
-    case '+':
-      answer = first.plus(second);
-      break;
+  if (operation === '%') {
+    answer = Big(numTwo).div(100);
+  } else {
+    const first = new Big(numOne);
+    const second = new Big(numTwo);
+    switch (operation) {
+      case '+':
+        answer = first.plus(second);
+        break;
 
-    case '-':
-      answer = first.minus(second);
-      break;
+      case '-':
+        answer = first.minus(second);
+        break;
 
-    case 'x':
-      answer = first.times(second);
-      break;
+      case 'x':
+        answer = first.times(second);
+        break;
 
-    case '÷':
-      answer = first.div(second);
-      break;
+      case '÷':
+        answer = first.div(second);
+        break;
 
-    case '%':
-      answer = first.mod(second);
-      break;
-
-    default:
+      default:
+    }
   }
-
   return answer;
 };
 
