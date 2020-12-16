@@ -34,7 +34,7 @@ class App extends React.Component {
           <h1>Calculator React</h1>
           <>
             <Display result={total} next={next} />
-            <ButtonPanel clickHandler={this.handleClick} />
+            <ButtonPanel handleClick={this.handleClick} />
           </>
         </header>
       </div>
