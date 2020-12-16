@@ -17,23 +17,23 @@ class App extends React.Component {
   }
 
   handleClick = buttonName => {
+    const result = calculate(this.state, buttonName);
+    this.setState(result);
+  }
+
+  showResult() {
     const { total, next, operation } = this.state;
-    const result = calculate({ total, next, operation }, buttonName);
-    this.setState({
-      total: result.total,
-      next: result.next,
-      operation: result.operation,
-    });
+    const result = `${total}${operation}${next}`.replace(/null/g, '');
+    return result === '' ? undefined : result;
   }
 
   render() {
-    const { total, next } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <h1>Calculator React</h1>
           <>
-            <Display result={total} next={next} />
+            <Display result={this.showResult()} />
             <ButtonPanel handleClick={this.handleClick} />
           </>
         </header>
