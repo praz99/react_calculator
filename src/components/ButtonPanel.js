@@ -1,41 +1,46 @@
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => (
+const ButtonPanel = ({ handleClick }) => (
   <>
     <div>
-      <Button button="AC" />
-      <Button button="+/-" />
-      <Button button="%" />
-      <Button button="/" />
+      <Button button="AC" handleClick={handleClick} />
+      <Button button="+/-" handleClick={handleClick} />
+      <Button button="%" handleClick={handleClick} />
+      <Button button="÷" handleClick={handleClick} />
     </div>
 
     <div>
-      <Button button="7" />
-      <Button button="8" />
-      <Button button="9" />
-      <Button button="x" />
+      <Button button="7" handleClick={handleClick} />
+      <Button button="8" handleClick={handleClick} />
+      <Button button="9" handleClick={handleClick} />
+      <Button button="x" handleClick={handleClick} />
     </div>
 
     <div>
-      <Button button="4" />
-      <Button button="5" />
-      <Button button="6" />
-      <Button button="-" />
+      <Button button="4" handleClick={handleClick} />
+      <Button button="5" handleClick={handleClick} />
+      <Button button="6" handleClick={handleClick} />
+      <Button button="-" handleClick={handleClick} />
     </div>
 
     <div>
-      <Button button="1" />
-      <Button button="2" />
-      <Button button="3" />
-      <Button button="+" />
+      <Button button="1" handleClick={handleClick} />
+      <Button button="2" handleClick={handleClick} />
+      <Button button="3" handleClick={handleClick} />
+      <Button button="+" handleClick={handleClick} />
     </div>
 
     <div>
-      <Button button="0" />
-      <Button button="." />
-      <Button button="=" />
+      <Button button="0" handleClick={handleClick} />
+      <Button button="." handleClick={handleClick} />
+      <Button button="=" handleClick={handleClick} />
     </div>
   </>
 );
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
