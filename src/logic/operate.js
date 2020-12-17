@@ -5,6 +5,8 @@ const operate = (numOne, numTwo, operation) => {
 
   if (operation === '%') {
     answer = Big(numTwo).div(100);
+  } else if (operation === '÷' && numTwo === '0') {
+    answer = '∞';
   } else {
     const first = new Big(numOne);
     const second = new Big(numTwo);

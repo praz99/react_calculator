@@ -12,8 +12,6 @@ class App extends React.Component {
       next: null,
       operation: null,
     };
-
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = buttonName => {
@@ -21,7 +19,7 @@ class App extends React.Component {
     this.setState(result);
   }
 
-  showResult() {
+  showResult = () => {
     const { total, next, operation } = this.state;
     const result = `${total}${operation}${next}`.replace(/null/g, '');
     return result === '' ? undefined : result;
