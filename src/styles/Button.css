@@ -1,0 +1,7 @@
+.button {
+  width: 25%;
+  border-radius: 0;
+  font-size: 1.5em;
+  outline: none;
+  border: 1px solid grey;
+}
