@@ -9,11 +9,7 @@ const App = () => {
   const [operation, setOperation] = useState(null);
 
   const handleClick = buttonName => {
-    const calcObj = {
-      total: total,
-      next: next,
-      operation: operation,
-    }
+    const calcObj = { total, next, operation };
     const result = calculate(calcObj, buttonName);
     setTotal(result.total);
     setNext(result.next);
