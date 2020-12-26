@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import '../styles/Display.css';
 
 const Display = ({ result }) => (
-  <p>{ result }</p>
+  <p className="show-result">{ result }</p>
 );
 
 Display.propTypes = {
