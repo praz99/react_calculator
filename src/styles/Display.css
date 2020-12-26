@@ -1,0 +1,10 @@
+.show-result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #858693;
+  height: 100px;
+  width: 100%;
+  color: white;
+  font-size: 3.4em;
+}
