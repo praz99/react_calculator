@@ -23,14 +23,14 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Calculator React</h1>
+    <div className="App-container">
+      <h2>Let&apos;s do some math!</h2>
+      <div className="App">
         <>
           <Display result={showResult()} />
           <ButtonPanel handleClick={handleClick} />
         </>
-      </header>
+      </div>
     </div>
   );
 };
