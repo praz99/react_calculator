@@ -1,0 +1,11 @@
+.home {
+  margin: 50px 2em 0 2em;
+  padding-top: 2em;
+}
+
+p {
+  margin-top: 20px;
+  line-height: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+}
