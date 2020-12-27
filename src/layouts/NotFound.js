@@ -1,3 +1,5 @@
+import React from 'react';
+
 const NotFound = () => (
   <h1>
     Go home, you are drunk. :-D
