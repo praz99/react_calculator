@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  align-items: center;
+  z-index: 10;
+  margin: 0 1em;
+}
+
+h2 {
+  width: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(27, 86, 175);
+  padding: 5px;
+}
