@@ -1,20 +1,12 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.App-container {
+  margin-top: 50px;
+  display: flex;
 }
 
 .App {
   margin: 0 auto;
-  background-color: lightblue;
   width: 700px;
   display: flex;
   flex-direction: column;
-}
-
-h1 {
-  text-align: center;
-  padding: 0.6em;
+  border: 1px solid black;
 }
