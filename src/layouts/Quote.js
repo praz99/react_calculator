@@ -3,7 +3,7 @@ import '../styles/Quote.css';
 
 const Quote = () => (
   <div className="quote">
-    <p className="quote-para">Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston</p>
+    <p className="quote-para" data-testid="quote-para">Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston</p>
   </div>
 );
 
