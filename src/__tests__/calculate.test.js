@@ -1,5 +1,5 @@
-import calculate from '../logic/calculate';
 import Big from 'big.js';
+import calculate from '../logic/calculate';
 
 test('AC button', () => {
   const calcObj = { total: '1', next: '2', operation: '+' };

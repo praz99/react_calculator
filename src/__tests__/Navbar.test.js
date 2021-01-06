@@ -1,29 +1,29 @@
 import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect';
 import Navbar from '../layouts/Navbar';
 
-afterEach(cleanup)
+afterEach(cleanup);
 
 it('should display the heading', () => {
   const { getByTestId } = render(<Navbar />);
-  expect(getByTestId('navbar-heading')).toHaveTextContent('Math Magicians')
+  expect(getByTestId('navbar-heading')).toHaveTextContent('Math Magicians');
 });
 
 it('should display link for home page', () => {
   render(<Navbar />);
   const homeAnchorNode = screen.getByText('Home');
-  expect(homeAnchorNode).toBeInTheDocument;
+  expect(homeAnchorNode).toBeInTheDocument();
 });
 
 it('should display link for calculator page', () => {
   render(<Navbar />);
   const homeAnchorNode = screen.getByText('Calculator');
-  expect(homeAnchorNode).toBeInTheDocument;
+  expect(homeAnchorNode).toBeInTheDocument();
 });
 
 it('should display link for quote page', () => {
   render(<Navbar />);
   const homeAnchorNode = screen.getByText('Quote');
-  expect(homeAnchorNode).toBeInTheDocument;
+  expect(homeAnchorNode).toBeInTheDocument();
 });
